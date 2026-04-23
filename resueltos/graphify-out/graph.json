@@ -1,0 +1,518 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "languages_in_p",
+        "label": "Languages Proven in P via Polynomial Algorithms",
+        "nodes": [
+          "resueltos_coprime",
+          "resueltos_power",
+          "resueltos_tree",
+          "resueltos_finite_language",
+          "resueltos_complexity_class_p"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "resueltos.md"
+      },
+      {
+        "id": "graph_algorithms_bfs",
+        "label": "Graph Problems Decided via BFS",
+        "nodes": [
+          "resueltos_tree",
+          "resueltos_hampath",
+          "resueltos_bfs"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "resueltos.md"
+      },
+      {
+        "id": "np_membership_proof",
+        "label": "NP Membership Proof via Certificate-Verifier",
+        "nodes": [
+          "resueltos_hampath",
+          "resueltos_np_certificate",
+          "resueltos_complexity_class_np"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "resueltos.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Practica 2",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "## Practica 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_practica2",
+      "community": 0,
+      "norm_label": "practica 2"
+    },
+    {
+      "label": "Complexity Class P",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "### 1. Demostrar L \u2208 P para cada L",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_complexity_class_p",
+      "community": 0,
+      "norm_label": "complexity class p"
+    },
+    {
+      "label": "Complexity Class NP",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "### 3) Probar L \u2208 NP",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_complexity_class_np",
+      "community": 0,
+      "norm_label": "complexity class np"
+    },
+    {
+      "label": "COPRIME Language",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "a) COPRIME = {<a,b>: (a:b) == 1}",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_coprime",
+      "community": 1,
+      "norm_label": "coprime language"
+    },
+    {
+      "label": "POWER Language",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "b) POWER = {<a,e,b>: a^e = b}",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_power",
+      "community": 1,
+      "norm_label": "power language"
+    },
+    {
+      "label": "TREE Language",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "c) TREE = {<G>: G es un grafo conexo sin ciclos}",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_tree",
+      "community": 2,
+      "norm_label": "tree language"
+    },
+    {
+      "label": "Finite Language in P",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "c) L: |L| < \u221e",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_finite_language",
+      "community": 0,
+      "norm_label": "finite language in p"
+    },
+    {
+      "label": "HAMPATH Language",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "a. HAMPATH = {<G,s,t>: camino hamiltoniano de s a t}",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_hampath",
+      "community": 2,
+      "norm_label": "hampath language"
+    },
+    {
+      "label": "Euclidean Algorithm (GCD)",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "def mcd(a, b)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_euclidean_algorithm",
+      "community": 1,
+      "norm_label": "euclidean algorithm (gcd)"
+    },
+    {
+      "label": "Binary Exponentiation",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "def pow(a, e)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_binary_exponentiation",
+      "community": 1,
+      "norm_label": "binary exponentiation"
+    },
+    {
+      "label": "Breadth-First Search (BFS)",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "def isTREE / def isHAMPATH",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_bfs",
+      "community": 2,
+      "norm_label": "breadth-first search (bfs)"
+    },
+    {
+      "label": "Closure of P under Union, Intersection, Complement",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "### 2) Probar que la clase P est\u00e1 cerrada",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_p_closure",
+      "community": 0,
+      "norm_label": "closure of p under union, intersection, complement"
+    },
+    {
+      "label": "NP Certificate / Verifier",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "### 3) Probar L \u2208 NP \u2014 definici\u00f3n de certificado",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_np_certificate",
+      "community": 0,
+      "norm_label": "np certificate / verifier"
+    },
+    {
+      "label": "Polynomial Time Complexity",
+      "file_type": "document",
+      "source_file": "resueltos.md",
+      "source_location": "O(n^3), O(n^2), O(n)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "resueltos_polynomial_time",
+      "community": 1,
+      "norm_label": "polynomial time complexity"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "### 1. Demostrar L \u2208 P para cada L",
+      "weight": 1.0,
+      "_src": "resueltos_practica2",
+      "_tgt": "resueltos_complexity_class_p",
+      "source": "resueltos_practica2",
+      "target": "resueltos_complexity_class_p"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "### 3) Probar L \u2208 NP",
+      "weight": 1.0,
+      "_src": "resueltos_practica2",
+      "_tgt": "resueltos_complexity_class_np",
+      "source": "resueltos_practica2",
+      "target": "resueltos_complexity_class_np"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "### 2) Probar que la clase P est\u00e1 cerrada",
+      "weight": 1.0,
+      "_src": "resueltos_practica2",
+      "_tgt": "resueltos_p_closure",
+      "source": "resueltos_practica2",
+      "target": "resueltos_p_closure"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "COPRIME \u2208 P",
+      "weight": 1.0,
+      "_src": "resueltos_complexity_class_p",
+      "_tgt": "resueltos_coprime",
+      "source": "resueltos_complexity_class_p",
+      "target": "resueltos_coprime"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "POWER \u2208 P",
+      "weight": 1.0,
+      "_src": "resueltos_complexity_class_p",
+      "_tgt": "resueltos_power",
+      "source": "resueltos_complexity_class_p",
+      "target": "resueltos_power"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "TREE \u2208 P",
+      "weight": 1.0,
+      "_src": "resueltos_complexity_class_p",
+      "_tgt": "resueltos_tree",
+      "source": "resueltos_complexity_class_p",
+      "target": "resueltos_tree"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "|L| < \u221e \u2192 L \u2208 P",
+      "weight": 1.0,
+      "_src": "resueltos_complexity_class_p",
+      "_tgt": "resueltos_finite_language",
+      "source": "resueltos_complexity_class_p",
+      "target": "resueltos_finite_language"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "P cerrada por union, interseccion, complemento",
+      "weight": 1.0,
+      "_src": "resueltos_complexity_class_p",
+      "_tgt": "resueltos_p_closure",
+      "source": "resueltos_complexity_class_p",
+      "target": "resueltos_p_closure"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "resueltos.md",
+      "source_location": "Practica 2 \u2014 membership proofs for both classes",
+      "weight": 1.0,
+      "_src": "resueltos_complexity_class_p",
+      "_tgt": "resueltos_complexity_class_np",
+      "source": "resueltos_complexity_class_p",
+      "target": "resueltos_complexity_class_np"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "HAMPATH \u2208 NP",
+      "weight": 1.0,
+      "_src": "resueltos_complexity_class_np",
+      "_tgt": "resueltos_hampath",
+      "source": "resueltos_complexity_class_np",
+      "target": "resueltos_hampath"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "existe un certificado u tal que existe V polinomial",
+      "weight": 1.0,
+      "_src": "resueltos_complexity_class_np",
+      "_tgt": "resueltos_np_certificate",
+      "source": "resueltos_complexity_class_np",
+      "target": "resueltos_np_certificate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "Uso el algoritmo de Euclides",
+      "weight": 1.0,
+      "_src": "resueltos_coprime",
+      "_tgt": "resueltos_euclidean_algorithm",
+      "source": "resueltos_coprime",
+      "target": "resueltos_euclidean_algorithm"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.62,
+      "source_file": "resueltos.md",
+      "source_location": "both are arithmetic languages proven in P with number-theoretic algorithms",
+      "weight": 0.62,
+      "_src": "resueltos_coprime",
+      "_tgt": "resueltos_power",
+      "source": "resueltos_coprime",
+      "target": "resueltos_power"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "Uso exponenciacion binaria",
+      "weight": 1.0,
+      "_src": "resueltos_power",
+      "_tgt": "resueltos_binary_exponentiation",
+      "source": "resueltos_power",
+      "target": "resueltos_binary_exponentiation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "voy a hacer BFS desde cada nodo",
+      "weight": 1.0,
+      "_src": "resueltos_tree",
+      "_tgt": "resueltos_bfs",
+      "source": "resueltos_tree",
+      "target": "resueltos_bfs"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "resueltos.md",
+      "source_location": "both use BFS on graphs for membership testing",
+      "weight": 0.65,
+      "_src": "resueltos_tree",
+      "_tgt": "resueltos_hampath",
+      "source": "resueltos_tree",
+      "target": "resueltos_hampath"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "visit_counts, final_node = bfs(G, from=s, stop=t)",
+      "weight": 1.0,
+      "_src": "resueltos_hampath",
+      "_tgt": "resueltos_bfs",
+      "source": "resueltos_hampath",
+      "target": "resueltos_bfs"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "mcd es O(n^3)",
+      "weight": 1.0,
+      "_src": "resueltos_euclidean_algorithm",
+      "_tgt": "resueltos_polynomial_time",
+      "source": "resueltos_euclidean_algorithm",
+      "target": "resueltos_polynomial_time"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "O(n) multiplicaciones, O(n^2) cada una",
+      "weight": 1.0,
+      "_src": "resueltos_binary_exponentiation",
+      "_tgt": "resueltos_polynomial_time",
+      "source": "resueltos_binary_exponentiation",
+      "target": "resueltos_polynomial_time"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md",
+      "source_location": "TREE se computa en O(n^2), isHAMPATH O(n)",
+      "weight": 1.0,
+      "_src": "resueltos_bfs",
+      "_tgt": "resueltos_polynomial_time",
+      "source": "resueltos_bfs",
+      "target": "resueltos_polynomial_time"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "languages_in_p",
+      "label": "Languages Proven in P via Polynomial Algorithms",
+      "nodes": [
+        "resueltos_coprime",
+        "resueltos_power",
+        "resueltos_tree",
+        "resueltos_finite_language",
+        "resueltos_complexity_class_p"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md"
+    },
+    {
+      "id": "graph_algorithms_bfs",
+      "label": "Graph Problems Decided via BFS",
+      "nodes": [
+        "resueltos_tree",
+        "resueltos_hampath",
+        "resueltos_bfs"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md"
+    },
+    {
+      "id": "np_membership_proof",
+      "label": "NP Membership Proof via Certificate-Verifier",
+      "nodes": [
+        "resueltos_hampath",
+        "resueltos_np_certificate",
+        "resueltos_complexity_class_np"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "resueltos.md"
+    }
+  ]
+}

@@ -5,8 +5,8 @@ Apunte oficial: https://campus.exactas.uba.ar/pluginfile.php/182556/mod_resource
 ## Programa
 ### Primer parcial: 
 - [x] Máquinas de Turing. 
-- [ ] La clase P. 
-- [ ] La clase NP. 
+- [x] La clase P. 
+- [x] La clase NP. 
 - [ ] Máquinas no-determinísticas. 
 - [ ] Reducibilidad polinomial. 
 - [ ] Teorema de Cook-Levin. 
