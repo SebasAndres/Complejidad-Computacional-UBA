@@ -78,10 +78,7 @@ Como para MT determinísticas: toda palabra en $\{0,1\}^*$ representa alguna NTM
 
 ### Definición (Karp)
 
-$L \subseteq \{0,1\}^*$ es **Karp reducible polinomialmente** a $L' \subseteq \{0,1\}^*$, notado $L \leq_p L'$, si existe $f: \{0,1\}^* \to \{0,1\}^*$ computable en tiempo polinomial tal que
-$$x \in L \iff f(x) \in L'.$$
-
-$f$ se llama **reducción polinomial**; decimos $L \leq_p L'$ **vía** $f$.
+$L \subseteq \{0,1\}^*$ es **Karp reducible polinomialmente** a $L' \subseteq \{0,1\}^*$, notado $L \leq_p L'$, si existe $f: \{0,1\}^* \to \{0,1\}^*$ computable en tiempo polinomial tal que $x \in L \iff f(x) \in L'$. $f$ se llama **reducción polinomial**; decimos $L \leq_p L'$ **vía** $f$.
 
 ### NP-hard y NP-completo
 
