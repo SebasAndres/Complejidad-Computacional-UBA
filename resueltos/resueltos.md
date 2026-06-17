@@ -454,4 +454,18 @@ def f(x):
 
 Esta definicion cumple lo pedido.
 
+### 10. Probar que $\text{NP} \subset \text{RECURSIVE}$. Concluir que $\text{HALTING} \notin \text{NP}$.
 
+qvq $L \in \text{NP} \implies L \in \text{RECURSIVE}$.
+Si $L \in \text{NP}$ entonces hay un algoritmo de orden polinomial $V_L$ y $u$ de tamaño polinomial tal que `V_L(u,x)` certifica si $x \in L$.
+
+Quiero probar que $L \in \text{RECURSIVE}$: esto es, que hay una maquina que decida $x\in L \lor x\notin L$.
+Sea $q(|x|)$ la cota superior del certificado $u$. Dado que $|u| \leq q(|x|)$ y supongo un alfabeto finito $\Sigma = \{ 0, 1\}$. 
+Puedo testear los $2^{q(|x|)}$ candidatos de certificado $u'$ y validar si $V_L(u', x)$ da 1 o 0.
+Si ninguno da 1, entonces $x \notin L$ sino $x\in L$.
+
+Como $V$ es polinomial y la cantidad de $u$ es finita, $M$ siempre termina. Por lo tanto, $L$ es decidible ($L \in \text{RECURSIVE}$) $\square$.
+
+Ahora qvq $\text{HALTING} \notin \text{NP}$. 
+Sup. $\text{HALTING} \in \text{NP}$, luego $\text{HALTING} \in \text{RECURSIVE}$. Entonces puedo decidir `HALTING`.
+Absurdo, pues por el teorema de Turing $\text{HALTING}$ no es computable. 
