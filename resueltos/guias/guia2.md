@@ -1,5 +1,3 @@
-# Resueltos CC.
-
 ## Practica 2
 
 ### 1. Demostrar $L \in P$ para cada $L$
@@ -439,6 +437,8 @@ En cambio mostrar que $L^c \in \text{coNP}$ es mediante otro algoritmo + certifi
 
 $L \in \text{RECURSIVE} \iff L \text{ es decidible}$.
 
+$$L \in \text{RECURSIVE} \iff \exists M : \forall x \in \Sigma^*, M(x) \text{ se detiene en tiempo finito y } (M(x) = 1 \iff x \in L)$$
+
 Quiero hallar una $f$ computable polinomialmente tal que $x \in L \iff f(x) \in \text{HALTING}$
 
 Es decir: $x \in L \implies f(x) \in \text{HALTING} \land x \notin L \implies f(x) \notin \text{HALTING}$.
@@ -455,3 +455,33 @@ def f(x):
 Esta definicion cumple lo pedido.
 
 
+### 10. Probar que $\text{NP} \subset \text{RECURSIVE}$. Concluir que $\text{HALTING} \notin \text{NP}$
+
+Quiero ver que $L \in \text{NP} \implies L \in \text{RECURSIVE}$.
+
+$L \in \text{NP} \\
+\iff \exists u \in \Sigma^{\leq p(|x|)}, M: (M(x,u) = x \in L) \land (M(x,u) \text{ corre en tiempo polinomial})$
+
+```c
+uint8_t L_accepts(x, M, p) {
+    // 1. Calculamos el límite polinomial k = p(|x|)
+    size_t k = p(len(x)); 
+    
+    // 2. Generamos el iterador de posibles certificados de longitud <= k
+    // (En la práctica, se generan uno a uno para no agotar la RAM)
+    Iterator U = _get_certificate_iterator(k); 
+    
+    // 3. Cuantificador existencial (∃): probamos uno por uno
+    foreach (u in U) {
+        if (M(x, u) == 1) { // Corre en tiempo polinomial por definición
+            return 1; 
+        }
+    }
+    
+    // 4. Si se agota el iterador y ninguno sirvió, rechazamos
+    return 0; 
+}
+```
+$\square$
+
+Veo que $\text{HALTING} \notin \text{RECURSIVE}$, como $\text{NP} \subset \text{RECURSIVE}$ entonces  $\text{HALTING} \notin \text{NP}$ $\square$.
