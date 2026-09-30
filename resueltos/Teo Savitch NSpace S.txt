@@ -1,0 +1,27 @@
+Teo Savitch: NSpace[S] \subset DSpace[S^2], S(n) >= log(n)
+
+Demo. Sea $L \in \text{NSPACE}[S]$ decidido por $N$. Sin pérdida de generalidad, antes de aceptar $N$ borra la cinta de trabajo y lleva los cabezales a la posición 1, así hay una única configuración de aceptación $c_{acc}$.
+
+Sea $G_{N,x}$ el grafo de configuraciones de $N$ sobre $x$. Una configuración es (estado, contenido de la cinta de trabajo, posición del cabezal de trabajo, posición del cabezal de entrada); la cinta de entrada no forma parte porque es fija. Entonces:
+
+Cada nodo ocupa $k \cdot S(n)$ bits, pues la posición del cabezal de entrada ocupa $\log n \le S(n)$ bits. La cantidad de nodos es a lo sumo $|Q| \cdot |\Gamma|^{S(n)} \cdot S(n) \cdot n \le 2^{c \cdot S(n)}$, usando otra vez $n \le 2^{S(n)}$.
+
+def M(x):
+    n = |x|                          # O(log n) ⊆ O(S(n)), pues S(n) ≥ log n
+    calcular S(n)                    # O(S(n)), S construible en espacio
+    t = 2^{c·S(n)}                   # guardar t cuesta log t = O(S(n)) bits
+    return Reach(c_ini, c_acc, t)    # O(S(n)^2)
+
+def Reach(a, b, t):
+    # ¿hay camino de a a b de longitud ≤ t en G_{N,x}?
+    if t == 1:
+        return (a == b) or (a -> b en G_{N,x})
+    for node in {0,1}^{k·S(n)}:
+        if Reach(a, node, t/2) and Reach(node, b, t/2):
+            return True
+    return False
+
+No hace falta tener $G_{N,x}$ en memoria para validar $a \to b$ porque la arista se calcula al vuelo: $M$ tiene la función de transición $\delta$ de $N$ escrita en su propio programa, y es finita. Para decidir si $a \to b$, $M$ lee el estado de $a$, el símbolo de la cinta de trabajo bajo el cabezal (que está en $a$) y el símbolo de $x$ en la posición del cabezal de entrada (que también está en $a$). Busca en $\delta$ los movimientos posibles, aplica cada uno y compara con $b$. Eso usa $O(S(n))$ espacio adicional.
+
+Corolario: NSPACE = PSPACE 
+Demo. x in NSPACE <-> 
